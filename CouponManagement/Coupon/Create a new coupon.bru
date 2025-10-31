@@ -1,0 +1,36 @@
+meta {
+  name: Create a new coupon
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8080/api/coupons
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "type": "BXGY",
+    "details": {
+      "buyProducts": [
+        {
+          "productId": 1,
+          "quantity": 3
+        },
+        {
+          "productId": 2,
+          "quantity": 3
+        }
+      ],
+      "getProducts": [
+        {
+          "productId": 3,
+          "quantity": 1
+        }
+      ],
+      "repetitionLimit": 2
+    }
+  }
+}

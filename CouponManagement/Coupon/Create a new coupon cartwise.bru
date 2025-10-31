@@ -1,0 +1,22 @@
+meta {
+  name: Create a new coupon cartwise
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8080/api/coupons
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "type": "CART_WISE",
+    "details": {
+      "threshold": 100,
+      "discount": 10
+    }
+  }
+  
+}

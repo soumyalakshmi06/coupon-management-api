@@ -1,0 +1,22 @@
+meta {
+  name: Create a new coupon cartwise productWise
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8080/api/coupons
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "type": "PRODUCT_WISE",
+    "details": {
+      "productId": 1,
+      "discount": 20
+    }
+  }
+  
+}

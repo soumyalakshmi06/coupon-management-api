@@ -1,0 +1,22 @@
+meta {
+  name: Update a specific coupon by its  ID
+  type: http
+  seq: 6
+}
+
+put {
+  url: http://localhost:8080/api/coupons/1
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "type": "CART_WISE",
+    "details": {
+      "threshold": 200,
+      "discount": 15
+    }
+  }
+  
+}
