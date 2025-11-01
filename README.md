@@ -1,4 +1,7 @@
 Coupon Management System
+
+
+
 Overview
 The Coupon Management System is a Spring Boot REST API that allows administrators to create, manage, and apply different types of coupons:
 •	Cart-wise Coupons
